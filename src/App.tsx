@@ -24,6 +24,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import { PERSONAL_INFO, EXPERIENCES, EDUCATION, PROJECTS, SKILLS, CERTIFICATIONS } from './constants';
+import foto from "./foto_diri.jpeg";
 
 interface SectionHeaderProps {
   number: string;
@@ -465,7 +466,11 @@ export default function App() {
                     <span>{PERSONAL_INFO.location}</span>
                   </div>
                   <div className="absolute inset-0 flex items-center justify-center">
-                     <Database size={120} className="text-brand-accent opacity-[0.03]" />
+                    <img
+                      src={foto}
+                      alt="profile"
+                      className="w-60 rounded-xl shadow-lg"
+                    />
                   </div>
                </div>
             </div>
